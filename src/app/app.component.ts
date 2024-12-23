@@ -5,8 +5,7 @@ import { CommonModule } from '@angular/common';
 import { EmployeeListComponent } from "./employee-list/employee-list.component";
 import {HttpClientModule} from '@angular/common/http';
 
-@Component({
-    selector: 'app-root',
+@Compo    selector: 'app-root',
     imports: [
         RouterOutlet,
         CommonModule,
@@ -18,7 +17,9 @@ import {HttpClientModule} from '@angular/common/http';
         HttpClientModule
     ],
     templateUrl: './app.component.html',
-    styleUrl: './app.component.css'
+    styleUrl: './app. npm updacomponent.css'
+/app.component.css'
+omponent.css'
 })
 export class AppComponent {
   title = 'EMS (Angular × Spring Boot)';
