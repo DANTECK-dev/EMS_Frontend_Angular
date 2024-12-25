@@ -18,4 +18,8 @@ export class EmployeeService {
       {responseType: 'json'}
     );
   }
+
+  createEmployee(employee: Employee): Observable<Object> {
+    return this.httpClient.post(`${this.baseURL}`, employee);
+  }
 }
