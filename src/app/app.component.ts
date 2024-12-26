@@ -23,5 +23,5 @@ import { RouterModule } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'EMS (Angular × Spring Boot)';
+  title = 'EMS (Angular 19 × Spring Boot)';
 }
