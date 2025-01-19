@@ -1,4 +1,4 @@
-# Employee Management System (Frontend + Backend)
+# Employee Management System (EMS) Frontend (Angular)
 
 ## Описание проекта
 
