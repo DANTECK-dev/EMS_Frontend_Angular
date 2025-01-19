@@ -1,27 +1,118 @@
-# AngularFrontend
+# Employee Management System (Frontend + Backend)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
+## Описание проекта
 
-## Development server
+Данное приложение представляет собой систему управления сотрудниками. Оно позволяет:
+- Просматривать список сотрудников.
+- Добавлять новых сотрудников.
+- Редактировать данные существующих сотрудников.
+- Удалять сотрудников.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Стек технологий:
+- **Frontend**: Angular, Bootstrap.
+- **Backend**: Spring Boot, REST API.
+- **База данных**: MySQL.
 
-## Code scaffolding
+## Установка и запуск
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Backend
 
-## Build
+1. Убедитесь, что у вас установлены:
+   - **Java 21** или выше.
+   - **Maven**.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. Склонируйте репозиторий:
+   ```bash
+   git clone <ссылка-на-репозиторий>
+   ```
 
-## Running unit tests
+3. Настройте подключение к базе данных в `application.properties`:
+   ```properties
+   spring.datasource.url=jdbc:mysql://localhost:3306/employee_db
+   spring.datasource.username=ваш_пользователь
+   spring.datasource.password=ваш_пароль
+   spring.jpa.hibernate.ddl-auto=update
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. Запустите backend-приложение:
+   ```bash
+   mvn spring-boot:run
+   ```
 
-## Running end-to-end tests
+### Frontend
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Убедитесь, что у вас установлены:
+   - **Node.js** и **npm**.
 
-## Further help
+2. Перейдите в директорию frontend:
+   ```bash
+   cd angular-frontend
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. Установите зависимости:
+   ```bash
+   npm install
+   ```
+
+4. Запустите frontend-приложение:
+   ```bash
+   npm start
+   ```
+
+5. Откройте браузер и перейдите по адресу:
+   ```
+   http://localhost:4200
+   ```
+
+## Основные функции
+
+- **Просмотр сотрудников**: Список всех сотрудников отображается с возможностью поиска.
+- **Добавление сотрудников**: Форма для ввода имени, email и других данных сотрудника.
+- **Редактирование сотрудников**: Форма для изменения данных существующего сотрудника.
+- **Удаление сотрудников**: Подтверждение перед удалением сотрудника.
+
+## Основные API эндпоинты
+
+- **GET /api/employees**: Получение списка сотрудников.
+- **POST /api/employees**: Добавление нового сотрудника.
+- **PUT /api/employees/{id}**: Редактирование данных сотрудника.
+- **DELETE /api/employees/{id}**: Удаление сотрудника.
+
+## Скриншоты
+### Главная страница
+![Главная страница](screenshots/home.png)
+
+### Добавление сотрудника
+![Добавление сотрудника](screenshots/add.png)
+
+### Сотрудник добавлен
+![Добавление сотрудника](screenshots/added.png)
+
+### Редактирование сотрудника
+![Редактирование сотрудника](screenshots/update.png)
+
+### 'Подробное описание' сотрудника
+![Редактирование сотрудника](screenshots/view.png)
+
+### Новый список сотрудников
+![Редактирование сотрудника](screenshots/new_view.png)
+
+## Требования
+
+- **Backend**:
+  - Java 21 или выше.
+  - Maven.
+  - MySQL.
+
+- **Frontend**:
+  - Node.js.
+  - Angular CLI.
+
+### Автор
+- Cтудент **Александр Немеров**
+- Вуз **ВСГУТУ**
+- Группа **Б761-2**
+- Связь **lol@kek-work.ru**
+
+### Лицензия
+Проект распространяется под лицензией [MIT LICENSE](LICENSE).
