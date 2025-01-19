@@ -8,7 +8,7 @@
 - Редактировать данные существующих сотрудников.
 - Удалять сотрудников.
 
-Ссылка на [Backend](https://github.com/DANTECK-dev/EMS_Backend_SpringBoot)
+>Ссылка на [Backend](https://github.com/DANTECK-dev/EMS_Backend_SpringBoot)
 
 ### Стек технологий:
 - **Frontend**: Angular, Bootstrap.
